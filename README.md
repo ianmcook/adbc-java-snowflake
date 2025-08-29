@@ -1,5 +1,7 @@
 # Connecting Java and Snowflake with ADBC
 
+## Instructions
+
 1. Wait until after the ADBC libraries and drivers release 0.20.0 (expected the week of September 8, 2025).
 2. Install the [Snowflake ADBC driver](https://arrow.apache.org/adbc/main/driver/snowflake.html) for C/C++ and locate the Snowflake shared library file:
   - On Linux, this file is typically named `libadbc_driver_snowflake.so`.
