@@ -10,5 +10,6 @@
 3. Edit the file `Demo.java` to change:
    - The path to your copy of the Snowflake ADBC driver shared library file (line 20)
    - The connection parameters (lines 21-35)
+     - See the [supported features of the Snowflake driver](https://arrow.apache.org/adbc/current/driver/snowflake.html#supported-features) for details.
    - The SQL SELECT statement (line 40)
 4. In this directory, run `mvn compile exec:exec`
