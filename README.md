@@ -51,4 +51,4 @@ mvn install -Pjni -DskipTests
 popd
 ```
 
-6. In the file `xml.pom` in this directory, change `adbc.version` to `0.20.0-SNAPSHOT`.
+6. In the file `pom.xml` in this directory, change `adbc.version` to `0.20.0-SNAPSHOT`.
