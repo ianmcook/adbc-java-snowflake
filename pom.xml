@@ -15,6 +15,7 @@
         <exec.mainClass>tech.columnar.Demo</exec.mainClass>
         <arrow.version>18.3.0</arrow.version>
         <adbc.version>0.20.0</adbc.version>
+        <adbc.driver.jni.version>0.21.0-SNAPSHOT</adbc.driver.jni.version>
     </properties>
 
     <dependencyManagement>
@@ -28,6 +29,20 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <repositories>
+      <repository>
+        <name>Central Portal Snapshots</name>
+        <id>central-portal-snapshots</id>
+        <url>https://central.sonatype.com/repository/maven-snapshots/</url>
+        <releases>
+          <enabled>false</enabled>
+        </releases>
+        <snapshots>
+          <enabled>true</enabled>
+        </snapshots>
+      </repository>
+    </repositories>
 
     <dependencies>
         <dependency>
@@ -54,9 +69,9 @@
             <version>${adbc.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.arrow.adbc</groupId>
+            <groupId>org.adbc-drivers</groupId>
             <artifactId>adbc-driver-jni</artifactId>
-            <version>${adbc.version}</version>
+            <version>${adbc.driver.jni.version}</version>
         </dependency>
     </dependencies>
 

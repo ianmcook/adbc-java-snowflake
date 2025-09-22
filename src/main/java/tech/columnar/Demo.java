@@ -1,9 +1,9 @@
 package tech.columnar;
 
+import org.adbcdrivers.driver.jni.JniDriver;
 import org.apache.arrow.adbc.core.AdbcConnection;
 import org.apache.arrow.adbc.core.AdbcDatabase;
 import org.apache.arrow.adbc.core.AdbcStatement;
-import org.apache.arrow.adbc.driver.jni.JniDriver;
 import org.apache.arrow.adbc.drivermanager.AdbcDriverManager;
 import org.apache.arrow.memory.BufferAllocator;
 import org.apache.arrow.memory.RootAllocator;
@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Demo {
-    private static final String DRIVER_FACTORY = "org.apache.arrow.adbc.driver.jni.JniDriverFactory";
+    private static final String DRIVER_FACTORY = "org.adbcdrivers.driver.jni.JniDriverFactory";
 
     public static void main(String[] args) throws Exception {
         Map<String, Object> params = new HashMap<>();
