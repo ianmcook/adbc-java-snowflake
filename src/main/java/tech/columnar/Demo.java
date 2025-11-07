@@ -17,7 +17,7 @@ public class Demo {
 
     public static void main(String[] args) throws Exception {
         Map<String, Object> params = new HashMap<>();
-        JniDriver.PARAM_DRIVER.set(params, "/path/to/libadbc_driver_snowflake.so");
+        JniDriver.PARAM_DRIVER.set(params, "snowflake");
         params.put("username", "USER");
 
         // for username/password authentication
